@@ -1,0 +1,147 @@
+@media (max-width: 767.98px) {
+    /* Navbar */
+    .navbar-nav {
+        text-align: center;
+        padding: 15px 0;
+    }
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+    .nav-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Carousel */
+    .header-carousel-item .carousel-caption {
+        padding: 20px;
+    }
+    .header-carousel-item h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .header-carousel-item h4 {
+        font-size: 1.2rem;
+    }
+    .header-carousel-item p {
+        font-size: 0.9rem;
+    }
+    .carousel-img img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    /* Feature, Service, Blog, Team */
+    .feature-item, .service-item, .blog-item, .team-item {
+        margin-bottom: 20px;
+    }
+    .feature-item h4, .service-item h4, .blog-item h4, .team-item h4 {
+        font-size: 1.2rem;
+    }
+    .feature-item p, .service-item p, .blog-item p, .team-item p {
+        font-size: 0.9rem;
+    }
+    .counter-item h4 {
+        font-size: 1rem;
+    }
+    .counter-item span.fs-2 {
+        font-size: 1.5rem;
+    }
+
+    /* About, FAQs */
+    .about-item-content h1, .faq-section h1 {
+        font-size: 2rem;
+    }
+    .about-item-content p, .faq-section p {
+        font-size: 0.9rem;
+    }
+    .accordion-button {
+        font-size: 0.9rem;
+    }
+    .accordion-body {
+        font-size: 0.85rem;
+    }
+
+    /* Contact Page */
+    .contact-img img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+    .form-floating input, .form-floating select, .form-floating textarea {
+        font-size: 0.9rem;
+    }
+    .form-floating label {
+        font-size: 0.85rem;
+    }
+    .contact .btn-primary {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .contact-add-item h4 {
+        font-size: 1.2rem;
+    }
+    .contact-add-item p {
+        font-size: 0.9rem;
+    }
+    .bg-breadcrumb h4 {
+        font-size: 2rem;
+    }
+    .breadcrumb-item {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-item h3 {
+        font-size: 1.5rem;
+    }
+    .footer-item p, .footer-item a {
+        font-size: 0.9rem;
+    }
+    .footer .row.g-4 > div {
+        margin-bottom: 20px;
+    }
+
+    /* General */
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* Further adjustments for very small screens */
+    .navbar-brand h1 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    .feature-item, .service-item, .blog-item, .team-item {
+        padding: 10px;
+    }
+    .contact-img img {
+        max-height: 250px;
+    }
+    .form-floating input, .form-floating select, .form-floating textarea {
+        font-size: 0.85rem;
+    }
+    .contact .btn-primary {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+    .footer-item h4 {
+        font-size: 1.2rem;
+    }
+}
