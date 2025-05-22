@@ -1,3 +1,19 @@
+/* Default styles for team images */
+.team-img-fixed {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Default styles for service images */
+.service-img-fixed {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
 @media (max-width: 767.98px) {
     /* Navbar */
     .navbar-nav {
@@ -54,6 +70,18 @@
     }
     .counter-item span.fs-2 {
         font-size: 1.5rem;
+    }
+    .team-img-fixed {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .service-img-fixed {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        object-position: top;
     }
 
     /* About, FAQs */
@@ -143,5 +171,17 @@
     }
     .footer-item h4 {
         font-size: 1.2rem;
+    }
+    .team-img-fixed {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .service-img-fixed {
+        width: 200px;
+        height: 160px;
+        object-fit: cover;
+        object-position: top;
     }
 }
