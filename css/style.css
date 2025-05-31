@@ -400,11 +400,11 @@
 /*** Carousel Hero Header End ***/
 
 
-/*** Single Page Hero Header Start ***/
+/*** about Hero Header Start ***/
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg);
+    background: linear-gradient(rgba(38, 137, 72, 0.9), rgba(0, 0, 0, 0.2)), url(../img/banner2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,6 +417,28 @@
 }
 
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+}
+/*** about Hero Header End ***/
+
+
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb1 {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(38, 137, 72, 0.9), rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+.bg-breadcrumb1 .breadcrumb1 {
+    position: relative;
+}
+
+.bg-breadcrumb1 .breadcrumb1 .breadcrumb1-item a {
     color: var(--bs-white);
 }
 /*** Single Page Hero Header End ***/
