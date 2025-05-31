@@ -258,38 +258,104 @@
 }
 /*** Navbar End ***/
 
-
 /*** Carousel Hero Header Start ***/
+
 .header-carousel .header-carousel-item {
     height: 700px;
+    position: relative;
+    background-image: url('../img/greenhouse12.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeInBg 2s ease-in-out forwards;
+    overflow: hidden;
 }
 
+/* Green overlay */
+.header-carousel .header-carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 128, 0, 0.5); /* stronger green overlay */
+    animation: fadeInOverlay 2s ease-in-out forwards;
+    z-index: 1;
+}
+
+/* Caption centered */
+.header-carousel .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Text styling */
+.header-carousel .carousel-caption h4 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.header-carousel .carousel-caption h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.header-carousel .carousel-caption p {
+    color: #f8f9fa;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.header-carousel .carousel-caption .btn {
+    background-color: #fff;
+    color: #2e7d32;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-carousel .carousel-caption .btn:hover {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+/* Nav arrows */
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
     position: absolute;
     width: 60px;
     height: 60px;
-    border-radius: 60px;
+    border-radius: 50%;
     background: var(--bs-light);
     color: var(--bs-primary);
     font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 30px;
     transition: 0.5s;
 }
 
 .header-carousel .owl-nav .owl-prev {
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 30px;
+    left: 30px;
 }
 .header-carousel .owl-nav .owl-next {
-    bottom: 30px;
-    right: 50%;
-    transform: translateX(-50%);
-    margin-right: 30px;
+    right: 30px;
 }
 
 .header-carousel .owl-nav .owl-prev:hover,
@@ -298,24 +364,24 @@
     color: var(--bs-white);
 }
 
-.header-carousel .header-carousel-item .carousel-caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .2);
-    display: flex;
-    align-items: center;
+/* Fade animations */
+@keyframes fadeInBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-@media (max-width: 991px) {
-    .header-carousel .header-carousel-item .carousel-caption {
-        padding-top: 45px;
-    }
+@keyframes fadeInOverlay {
+    from { opacity: 0; }
+    to { opacity: 0.5; }
+}
 
+/* Responsive adjustments */
+@media (max-width: 991px) {
     .header-carousel .header-carousel-item {
         height: 1300px;
+    }
+    .header-carousel .carousel-caption h1 {
+        font-size: 2.5rem;
     }
 }
 
@@ -323,19 +389,12 @@
     .header-carousel .header-carousel-item {
         height: 950px;
     }
-
-    .header-carousel .owl-nav .owl-prev {
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: -45px;
+    .header-carousel .carousel-caption h1 {
+        font-size: 2rem;
     }
-
+    .header-carousel .owl-nav .owl-prev,
     .header-carousel .owl-nav .owl-next {
         bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: 45px;
     }
 }
 /*** Carousel Hero Header End ***/
